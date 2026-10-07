@@ -1,0 +1,25 @@
+name: Bug
+description: Something in Forge does not work as it should.
+labels: [bug]
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: >-
+        The version shown in Forge's Settings (Mac: Settings › About; phone:
+        Settings › About; web: the page footer), for every build you saw it on,
+        comma-separated — for example `electron 0.1.2.0.1`,
+        `ios 0.1.2 (29849810)`, `android 0.1.2 (29849810)`, `web v225`.
+    validations:
+      required: true
+  - type: textarea
+    id: sees
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to make it happen again
